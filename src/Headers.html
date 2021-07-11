@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Герои мультфильмов</title>
+  <link href="./style.css" rel="stylesheet">
 </head>
 <body>
-<h1>Герои мультфильмов</h1>
+<h1 id ="page-header">Герои мультфильмов</h1>
 <br>
 <hr>
+
 <p><b>Тайная жизнь домашних животных</b></p>
 <table border="1">
   <tr>
@@ -36,6 +38,28 @@
   </tr>
 </table>
 <br>
+<form action="select1.php" method="post">
+  <p><select size="3" name="hero[]">
+    <option disabled>Какое животное работало на почте в мультфильме Зверополис?</option>
+    <option value="Жираф">Жираф</option>
+    <option selected value="Хомяк">Хомяк</option>
+    <option value="Ленивец">Ленивец</option>
+    <option value="Лемур">Лемур</option>
+  </select></p>
+  <p><input type="submit" value="Отправить"></p>
+</form>
+<br>
+<form action="select1.php" method="post">
+  <p><select size="4" multiple name="hero[]">
+    <option disabled>Кто из героев Гадкий я был желтым?</option>
+    <option value="Вектор">Вектор</option>
+    <option selected value="Стюарт">Стюарт</option>
+    <option value="Боб">Боб</option>
+    <option value="Грю">Грю</option>
+  </select></p>
+  <p><input type="submit" value="Отправить"></p>
+</form>
+<br>
 <p><b>Какой из мультфильмов по Вашему мнению самый лучший?</b></p>
 <form action="input10.php">
   <p><input type="radio" name="film" value="rad1"> Тайная жизнь домашних животных<Br>
@@ -49,17 +73,6 @@
 <form action="textarea1.php" method="post">
   <p><b>Почему именно этот мультфильм Вы выбрали?</b></p>
   <p><textarea rows="10" cols="45" name="text" maxlength="100"></textarea></p>
-  <p><input type="submit" value="Отправить"></p>
-</form>
-<br>
-<form action="select1.php" method="post">
-  <p><select size="4" multiple name="hero[]">
-    <option disabled>Кто из героев Гадкий я был желтым?</option>
-    <option value="Вектор">Вектор</option>
-    <option selected value="Стюарт">Стюарт</option>
-    <option value="Боб">Боб</option>
-    <option value="Грю">Грю</option>
-  </select></p>
   <p><input type="submit" value="Отправить"></p>
 </form>
 <br>
