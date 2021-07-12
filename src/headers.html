@@ -9,7 +9,6 @@
 <h1 id ="page-header">Герои мультфильмов</h1>
 <br>
 <hr>
-
 <p><b>Тайная жизнь домашних животных</b></p>
 <table border="1">
   <tr>
@@ -28,7 +27,7 @@
 </table>
 <br>
 <p><b>Зверополис</b></p>
-<table border="1">
+<table border="2">
   <tr>
     <th colspan="2"bgcolor="#FBF0DB">Герои</th>
   </tr>
@@ -38,8 +37,8 @@
   </tr>
 </table>
 <br>
-<form action="select1.php" method="post">
-  <p><select size="3" name="hero[]">
+<form action="select.php" method="post">
+  <p><select size="3" name="animals[]">
     <option disabled>Какое животное работало на почте в мультфильме Зверополис?</option>
     <option value="Жираф">Жираф</option>
     <option selected value="Хомяк">Хомяк</option>
@@ -49,7 +48,7 @@
   <p><input type="submit" value="Отправить"></p>
 </form>
 <br>
-<form action="select1.php" method="post">
+<form action="select1.php" method="get">
   <p><select size="4" multiple name="hero[]">
     <option disabled>Кто из героев Гадкий я был желтым?</option>
     <option value="Вектор">Вектор</option>
@@ -61,7 +60,7 @@
 </form>
 <br>
 <p><b>Какой из мультфильмов по Вашему мнению самый лучший?</b></p>
-<form action="input10.php">
+<form action="input5.php">
   <p><input type="radio" name="film" value="rad1"> Тайная жизнь домашних животных<Br>
     <input type="radio" name="film" value="rad2"> Зверополис<Br>
     <input type="radio" name="film" value="rad3"> Мадагаскар<Br>
@@ -70,7 +69,7 @@
   <button type="submit">Отправить заявку</button>
   <button type="reset">Очистить</button>
 </form>
-<form action="textarea1.php" method="post">
+<form action="textarea.php" method="post">
   <p><b>Почему именно этот мультфильм Вы выбрали?</b></p>
   <p><textarea rows="10" cols="45" name="text" maxlength="100"></textarea></p>
   <p><input type="submit" value="Отправить"></p>
@@ -87,25 +86,17 @@
   <input type="checkbox" name="checkbox"/></label>
 <br>
 <br>
-<h1><a href="./Index.html">Топ лучших мультфильмов по версии Тарасовой Кристины</a></h1>
+<h1><a href="./index.html">Топ лучших мультфильмов по версии Тарасовой Кристины</a></h1>
 <br>
 <p>Введите свои данные для отправки Вам рассылки на мультфильмы </p>
 <form>
   <form action="/handler.php" method="post">
     <label for="clientFirstName">Ваше имя</label>
     <input type="text" id="clientFirstName" name="clientFirstName">
-    <button type="submit">Отправить заявку</button>
-  </form>
-</form>
-<br>
-<form>
-  <form action="/handler.php" method="get">
-    <label for="clientLastName">Ваша Фамилия</label>
+    <label for="clientLastName">Фамилия</label>
     <input type="text" id="clientLastName" name="clientLastName">
     <button type="submit">Отправить заявку</button>
-  </form>
+    </form>
 </form>
-
-
 </body>
 </html>
